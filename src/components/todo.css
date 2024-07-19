@@ -1,0 +1,59 @@
+.todo {
+    position: relative;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: underline;
+    padding: 15px;
+    white-space: nowrap;
+    align-self: flex-start;
+    right: 75px;
+    margin-right:100px ;
+    color: rgb(199, 164, 98);
+
+}
+
+.todo-tasks {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60vh;
+    width: 300px;
+    border: 2px solid rgb(199,164,98);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-wrap: stable;
+    border-left: transparent;
+    border-right: transparent;
+}
+
+.task-content {
+    width: 85%;
+    height: auto;
+    overflow-wrap: break-word ;
+}
+
+.trash-icon {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    cursor: pointer;
+}
+
+.trash-icon:hover {
+    transform: scale(1.2);
+    transition: all 0.2 ease-in-out;
+}
